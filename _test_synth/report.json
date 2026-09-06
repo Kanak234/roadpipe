@@ -1,0 +1,215 @@
+{
+  "meta": {
+    "city": "Hazaribagh, Jharkhand",
+    "mode": "synth",
+    "input": "synthetic"
+  },
+  "graph": {
+    "nodes": 377,
+    "edges": 541
+  },
+  "segmentation_metrics": {
+    "iou": 0.9137,
+    "dice": 0.9549,
+    "precision": 0.993,
+    "recall": 0.9196,
+    "relaxed_iou": 0.9591,
+    "occlusion_recall": 0.115
+  },
+  "healing": {
+    "endpoints": 97,
+    "candidate_bridges": 21,
+    "bridges_added": 19,
+    "bridges_mst": 8,
+    "bridges_stub_repair": 11,
+    "max_gap_px": 45.0,
+    "max_angle_deg": 35.0
+  },
+  "connectivity": {
+    "nodes": 399,
+    "edges": 565,
+    "lcc_before_heal": 339,
+    "lcc_after_heal": 377,
+    "lcc_before_frac": 0.8496,
+    "lcc_after_frac": 0.9449,
+    "connectivity_gain_frac": 0.0952,
+    "num_components_before": 11,
+    "num_components_after": 3
+  },
+  "gatekeepers": [
+    {
+      "rank": 1,
+      "node": 200,
+      "betweenness": 0.25573,
+      "pos": [
+        998,
+        385
+      ],
+      "lonlat": null
+    },
+    {
+      "rank": 2,
+      "node": 169,
+      "betweenness": 0.25088,
+      "pos": [
+        829,
+        289
+      ],
+      "lonlat": null
+    },
+    {
+      "rank": 3,
+      "node": 167,
+      "betweenness": 0.25075,
+      "pos": [
+        827,
+        277
+      ],
+      "lonlat": null
+    },
+    {
+      "rank": 4,
+      "node": 205,
+      "betweenness": 0.21938,
+      "pos": [
+        1018,
+        411
+      ],
+      "lonlat": null
+    },
+    {
+      "rank": 5,
+      "node": 144,
+      "betweenness": 0.19546,
+      "pos": [
+        765,
+        241
+      ],
+      "lonlat": null
+    },
+    {
+      "rank": 6,
+      "node": 143,
+      "betweenness": 0.17365,
+      "pos": [
+        762,
+        238
+      ],
+      "lonlat": null
+    },
+    {
+      "rank": 7,
+      "node": 270,
+      "betweenness": 0.16831,
+      "pos": [
+        1063,
+        433
+      ],
+      "lonlat": null
+    },
+    {
+      "rank": 8,
+      "node": 271,
+      "betweenness": 0.1675,
+      "pos": [
+        1064,
+        434
+      ],
+      "lonlat": null
+    }
+  ],
+  "stress_test": [
+    {
+      "removed_node": null,
+      "removed_count": 0,
+      "avg_path_len": 387.705,
+      "resilience_index": 1.0,
+      "efficiency": 0.01005,
+      "efficiency_retained": 1.0,
+      "lcc_frac": 1.0,
+      "reachable_pairs": 250
+    },
+    {
+      "removed_node": 200,
+      "removed_count": 1,
+      "avg_path_len": 407.327,
+      "resilience_index": 0.9518,
+      "efficiency": 0.009896,
+      "efficiency_retained": 0.9847,
+      "lcc_frac": 0.9973,
+      "reachable_pairs": 249
+    },
+    {
+      "removed_node": 169,
+      "removed_count": 2,
+      "avg_path_len": 430.673,
+      "resilience_index": 0.9002,
+      "efficiency": 0.009789,
+      "efficiency_retained": 0.974,
+      "lcc_frac": 0.9947,
+      "reachable_pairs": 247
+    },
+    {
+      "removed_node": 167,
+      "removed_count": 3,
+      "avg_path_len": 439.514,
+      "resilience_index": 0.8821,
+      "efficiency": 0.009686,
+      "efficiency_retained": 0.9638,
+      "lcc_frac": 0.992,
+      "reachable_pairs": 244
+    },
+    {
+      "removed_node": 205,
+      "removed_count": 4,
+      "avg_path_len": 443.008,
+      "resilience_index": 0.8752,
+      "efficiency": 0.009672,
+      "efficiency_retained": 0.9624,
+      "lcc_frac": 0.9894,
+      "reachable_pairs": 243
+    },
+    {
+      "removed_node": 144,
+      "removed_count": 5,
+      "avg_path_len": 464.637,
+      "resilience_index": 0.8344,
+      "efficiency": 0.009537,
+      "efficiency_retained": 0.949,
+      "lcc_frac": 0.9867,
+      "reachable_pairs": 242
+    },
+    {
+      "removed_node": 143,
+      "removed_count": 6,
+      "avg_path_len": 470.476,
+      "resilience_index": 0.8241,
+      "efficiency": 0.009517,
+      "efficiency_retained": 0.9469,
+      "lcc_frac": 0.9841,
+      "reachable_pairs": 240
+    },
+    {
+      "removed_node": 270,
+      "removed_count": 7,
+      "avg_path_len": 485.652,
+      "resilience_index": 0.7983,
+      "efficiency": 0.009415,
+      "efficiency_retained": 0.9368,
+      "lcc_frac": 0.9814,
+      "reachable_pairs": 240
+    },
+    {
+      "removed_node": 271,
+      "removed_count": 8,
+      "avg_path_len": 493.865,
+      "resilience_index": 0.785,
+      "efficiency": 0.009378,
+      "efficiency_retained": 0.9331,
+      "lcc_frac": 0.9788,
+      "reachable_pairs": 237
+    }
+  ],
+  "resilience_index_final": 0.785,
+  "runtime_sec": 2.54
+}

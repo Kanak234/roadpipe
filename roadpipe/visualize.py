@@ -65,7 +65,9 @@ def save_criticality_heatmap(G, ebc, gatekeepers, shape, out_path):
 
     vals = list(ebc.values()) if ebc else [0]
     vmax = max(vals) if vals else 1.0
-    cmap = cm.get_cmap("inferno")
+    # matplotlib removed cm.get_cmap in 3.9; matplotlib.colormaps is the
+    # supported lookup and works from 3.5 onward.
+    cmap = matplotlib.colormaps["inferno"]
 
     for (a, b), score in ebc.items():
         if not G.has_edge(a, b):
