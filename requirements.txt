@@ -1,0 +1,22 @@
+# Core (required for image + synth modes — fully offline)
+numpy>=1.24
+scipy>=1.10
+opencv-python>=4.8
+scikit-image>=0.21
+networkx>=3.1
+matplotlib>=3.7
+scikit-learn>=1.3
+Pillow>=10.0
+
+# Real OSM mode (Hazaribagh from OpenStreetMap)
+osmnx>=2.0
+shapely>=2.0
+
+# Deep-learning segmentation (Phase I)
+torch>=2.0
+
+# Real satellite GeoTIFF mode (Sentinel-2 / LISS-IV)
+rasterio>=1.3
+
+# Interactive dashboard (Phase IV)
+streamlit>=1.30
