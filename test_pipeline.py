@@ -43,5 +43,17 @@ def main():
     print("All smoke tests passed.")
 
 
+# pytest entry point.
+#
+# `main()` above is the documented script interface ("Run: python
+# test_pipeline.py") and it works. But pytest only collects callables named
+# test_*, so this file contributed zero tests to a `pytest` run: CI installed
+# pytest, collected nothing, and reported success without ever executing the
+# smoke test. This wrapper makes the existing test visible to pytest. It adds
+# no new assertions -- every check still lives in check_report().
+def test_pipeline_smoke():
+    main()
+
+
 if __name__ == "__main__":
     main()
