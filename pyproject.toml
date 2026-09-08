@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "roadpipe"
+version = "1.0.0"
+description = "Road Network Extraction, Criticality Analysis and Self-Healing Pipeline"
+readme = "README.md"
+authors = [{ name = "Kanak" }]
+license = { text = "Apache-2.0" }
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "opencv-python>=4.8",
+    "scikit-image>=0.21",
+    "networkx>=3.1",
+    "matplotlib>=3.7",
+    "scikit-learn>=1.3",
+    "Pillow>=10.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "ruff>=0.1.0",
+]
+
+[project.scripts]
+roadpipe = "roadpipe.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["roadpipe*"]
+
+[tool.pytest.ini_options]
+testpaths = ["."]
+python_files = ["test_*.py"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
